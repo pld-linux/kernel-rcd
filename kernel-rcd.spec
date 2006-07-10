@@ -93,7 +93,7 @@ Patch10:	kernel-desktop-reiser4.patch
 Patch11:	kernel-desktop-squashfs.patch
 Patch12:	kernel-rcd-squashfs-lzma.patch
 
-# hadrware
+# hardware
 Patch20:	kernel-desktop-tahoe9xx.patch
 Patch21:	kernel-desktop-sk98lin.patch
 Patch23:	kernel-desktop-hdaps_protect.patch
