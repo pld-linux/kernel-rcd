@@ -280,9 +280,9 @@ PCMCIA Module (%{pcmcia_version})
 Modu³y PCMCIA (%{pcmcia_version}).
 
 %package headers
-summary:	header files for the linux kernel
-summary(de):	header dateien für den linux-kernel
-summary(pl):	pliki nag³ówkowe j±dra linuksa
+Summary:	header files for the linux kernel
+Summary(de):	header dateien für den linux-kernel
+Summary(pl):	pliki nag³ówkowe j±dra linuksa
 group:		development/building
 provides:	kernel-headers = %{epoch}:%{version}-%{release}
 provides:	kernel-headers(agpgart) = %{version}
