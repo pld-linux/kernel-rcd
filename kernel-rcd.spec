@@ -52,9 +52,9 @@
 %endif
 
 Summary:	The Linux kernel (the core of the Linux operating system)
-Summary(de.UTF-8):   Der Linux-Kernel (Kern des Linux-Betriebssystems)
-Summary(fr.UTF-8):   Le Kernel-Linux (La partie centrale du systeme)
-Summary(pl.UTF-8):   Jądro Linuksa
+Summary(de.UTF-8):	Der Linux-Kernel (Kern des Linux-Betriebssystems)
+Summary(fr.UTF-8):	Le Kernel-Linux (La partie centrale du systeme)
+Summary(pl.UTF-8):	Jądro Linuksa
 Name:		kernel-%{alt_kernel}
 %define		_basever	2.6.17
 %define		_postver	.4
@@ -208,7 +208,7 @@ się w komputerze, takiego jak sterowniki dysków itp.
 
 %package libs
 Summary:	Libraries for preparing bootable kernel on PowerPCs
-Summary(pl.UTF-8):   Biblioteki do przygotowania bootowalnego jądra dla PowerPC
+Summary(pl.UTF-8):	Biblioteki do przygotowania bootowalnego jądra dla PowerPC
 Group:		Base/Kernel
 Requires:	%{name}-up = %{epoch}:%{version}-%{release}
 Requires:	mkvmlinuz >= %{_mkvmlinuz_ver}
@@ -224,8 +224,8 @@ mkvmlinuz może być do tego przydatny.
 
 %package vmlinux
 Summary:	vmlinux - uncompressed kernel image
-Summary(de.UTF-8):   vmlinux - dekompressiertes Kernel Bild
-Summary(pl.UTF-8):   vmlinux - rozpakowany obraz jądra
+Summary(de.UTF-8):	vmlinux - dekompressiertes Kernel Bild
+Summary(pl.UTF-8):	vmlinux - rozpakowany obraz jądra
 Group:		Base/Kernel
 
 %description vmlinux
@@ -239,8 +239,8 @@ vmlinux - rozpakowany obraz jądra.
 
 %package net-netfilter
 Summary:	Netfilter kernel modules
-Summary(de.UTF-8):   Netfilter Kernel Treiber
-Summary(pl.UTF-8):   Moduły Netfiltera
+Summary(de.UTF-8):	Netfilter Kernel Treiber
+Summary(pl.UTF-8):	Moduły Netfiltera
 Group:		Base/Kernel
 Requires(postun):	%{name}-up = %{epoch}:%{version}-%{release}
 Requires:	%{name}-up = %{epoch}:%{version}-%{release}
@@ -259,8 +259,8 @@ Moduły Netfiltera (%{_netfilter_snap}).
 
 %package pcmcia
 Summary:	PCMCIA modules
-Summary(de.UTF-8):   PCMCIA Module
-Summary(pl.UTF-8):   Moduły PCMCIA
+Summary(de.UTF-8):	PCMCIA Module
+Summary(pl.UTF-8):	Moduły PCMCIA
 Group:		Base/Kernel
 Requires(postun):	%{name}-up = %{epoch}:%{version}-%{release}
 Requires:	%{name}-up = %{epoch}:%{version}-%{release}
@@ -281,8 +281,8 @@ Moduły PCMCIA (%{pcmcia_version}).
 
 %package headers
 Summary:	Header files for the linux kernel
-Summary(de.UTF-8):   Header dateien für den linux-kernel
-Summary(pl.UTF-8):   Pliki nagłówkowe jądra linuksa
+Summary(de.UTF-8):	Header dateien für den linux-kernel
+Summary(pl.UTF-8):	Pliki nagłówkowe jądra linuksa
 Group:		Development/Building
 Provides:	kernel-headers = %{epoch}:%{version}-%{release}
 Provides:	kernel-headers(agpgart) = %{version}
@@ -308,8 +308,8 @@ oraz budowania modułów jądra.
 
 %package module-build
 Summary:	Development files for building kernel modules
-Summary(de.UTF-8):   Development Dateien die beim Kernel Modul kompilationen gebraucht werden
-Summary(pl.UTF-8):   Pliki służące do budowania modułów jądra
+Summary(de.UTF-8):	Development Dateien die beim Kernel Modul kompilationen gebraucht werden
+Summary(pl.UTF-8):	Pliki służące do budowania modułów jądra
 Group:		Development/Building
 Requires:	%{name}-headers = %{epoch}:%{version}-%{release}
 Provides:	kernel-module-build = %{epoch}:%{version}-%{release}
@@ -329,8 +329,8 @@ Linuksa z zewnętrznych pakietów.
 
 %package source
 Summary:	Kernel source tree
-Summary(de.UTF-8):   Der Kernel Quelltext
-Summary(pl.UTF-8):   Kod źródłowy jądra Linuksa
+Summary(de.UTF-8):	Der Kernel Quelltext
+Summary(pl.UTF-8):	Kod źródłowy jądra Linuksa
 Group:		Development/Building
 Requires:	%{name}-module-build = %{epoch}:%{version}-%{release}
 Provides:	kernel-source = %{epoch}:%{version}-%{release}
@@ -363,8 +363,8 @@ Pakiet zawiera kod źródłowy jądra systemu.
 
 %package doc
 Summary:	Kernel documentation
-Summary(de.UTF-8):   Kernel Dokumentation
-Summary(pl.UTF-8):   Dokumentacja do jądra Linuksa
+Summary(de.UTF-8):	Kernel Dokumentation
+Summary(pl.UTF-8):	Dokumentacja do jądra Linuksa
 Group:		Documentation
 Provides:	kernel-doc = %{version}
 Autoreqprov:	no
