@@ -280,17 +280,17 @@ PCMCIA Module (%{pcmcia_version})
 Moduły PCMCIA (%{pcmcia_version}).
 
 %package headers
-Summary:	header files for the linux kernel
-Summary(de.UTF-8):   header dateien für den linux-kernel
-Summary(pl.UTF-8):   pliki nagłówkowe jądra linuksa
-group:		development/building
-provides:	kernel-headers = %{epoch}:%{version}-%{release}
-provides:	kernel-headers(agpgart) = %{version}
-provides:	kernel-headers(alsa-drivers)
-provides:	kernel-headers(bridging) = %{version}
-provides:	kernel-headers(netfilter) = %{_netfilter_snap}
-provides:	kernel-headers(reiserfs) = %{version}
-autoreqprov:	no
+Summary:	Header files for the linux kernel
+Summary(de.UTF-8):   Header dateien für den linux-kernel
+Summary(pl.UTF-8):   Pliki nagłówkowe jądra linuksa
+Group:		Development/Building
+Provides:	kernel-headers = %{epoch}:%{version}-%{release}
+Provides:	kernel-headers(agpgart) = %{version}
+Provides:	kernel-headers(alsa-drivers)
+Provides:	kernel-headers(bridging) = %{version}
+Provides:	kernel-headers(netfilter) = %{_netfilter_snap}
+Provides:	kernel-headers(reiserfs) = %{version}
+AutoReqProv:	no
 
 %description headers
 These are the C header files for the Linux kernel, which define
