@@ -52,9 +52,9 @@
 %endif
 
 Summary:	The Linux kernel (the core of the Linux operating system)
-Summary(de):	Der Linux-Kernel (Kern des Linux-Betriebssystems)
-Summary(fr):	Le Kernel-Linux (La partie centrale du systeme)
-Summary(pl):	J±dro Linuksa
+Summary(de.UTF-8):   Der Linux-Kernel (Kern des Linux-Betriebssystems)
+Summary(fr.UTF-8):   Le Kernel-Linux (La partie centrale du systeme)
+Summary(pl.UTF-8):   JÄ…dro Linuksa
 Name:		kernel-%{alt_kernel}
 %define		_basever	2.6.17
 %define		_postver	.4
@@ -189,26 +189,26 @@ This package contains the Linux kernel that is used to boot and run
 your system. It contains few device drivers for specific hardware.
 Most hardware is instead supported by modules loaded after booting.
 
-%description -l de
-Das Kernel-Packet enthält den Linux-Kernel (vmlinuz), den Kern des
-Linux-Betriebssystems. Der Kernel ist für grundliegende
+%description -l de.UTF-8
+Das Kernel-Packet enthÃ¤lt den Linux-Kernel (vmlinuz), den Kern des
+Linux-Betriebssystems. Der Kernel ist fÃ¼r grundliegende
 Systemfunktionen verantwortlich: Speicherreservierung,
-Prozeß-Management, Geräte Ein- und Ausgaben, usw.
+ProzeÃŸ-Management, GerÃ¤te Ein- und Ausgaben, usw.
 
-%description -l fr
+%description -l fr.UTF-8
 Le package kernel contient le kernel linux (vmlinuz), la partie
-centrale d'un système d'exploitation Linux. Le noyau traite les
-fonctions basiques d'un système d'exploitation: allocation mémoire,
-allocation de process, entrée/sortie de peripheriques, etc.
+centrale d'un systÃ¨me d'exploitation Linux. Le noyau traite les
+fonctions basiques d'un systÃ¨me d'exploitation: allocation mÃ©moire,
+allocation de process, entrÃ©e/sortie de peripheriques, etc.
 
-%description -l pl
-Pakiet zawiera j±dro Linuksa niezbêdne do prawid³owego dzia³ania
-Twojego komputera. Zawiera w sobie sterowniki do sprzêtu znajduj±cego
-siê w komputerze, takiego jak sterowniki dysków itp.
+%description -l pl.UTF-8
+Pakiet zawiera jÄ…dro Linuksa niezbÄ™dne do prawidÅ‚owego dziaÅ‚ania
+Twojego komputera. Zawiera w sobie sterowniki do sprzÄ™tu znajdujÄ…cego
+siÄ™ w komputerze, takiego jak sterowniki dyskÃ³w itp.
 
 %package libs
 Summary:	Libraries for preparing bootable kernel on PowerPCs
-Summary(pl):	Biblioteki do przygotowania bootowalnego j±dra dla PowerPC
+Summary(pl.UTF-8):   Biblioteki do przygotowania bootowalnego jÄ…dra dla PowerPC
 Group:		Base/Kernel
 Requires:	%{name}-up = %{epoch}:%{version}-%{release}
 Requires:	mkvmlinuz >= %{_mkvmlinuz_ver}
@@ -218,29 +218,29 @@ Autoreqprov:	no
 Libraries for preparing bootable kernel on PowerPCs. Script called
 mkvmlinuz may be useful for this.
 
-%description libs -l pl
-Biblioteki do przygotowania bootowalnego j±dra dla PowerPC. Skrypt
-mkvmlinuz mo¿e byæ do tego przydatny.
+%description libs -l pl.UTF-8
+Biblioteki do przygotowania bootowalnego jÄ…dra dla PowerPC. Skrypt
+mkvmlinuz moÅ¼e byÄ‡ do tego przydatny.
 
 %package vmlinux
 Summary:	vmlinux - uncompressed kernel image
-Summary(de):	vmlinux - dekompressiertes Kernel Bild
-Summary(pl):	vmlinux - rozpakowany obraz j±dra
+Summary(de.UTF-8):   vmlinux - dekompressiertes Kernel Bild
+Summary(pl.UTF-8):   vmlinux - rozpakowany obraz jÄ…dra
 Group:		Base/Kernel
 
 %description vmlinux
 vmlinux - uncompressed kernel image.
 
-%description vmlinux -l de
+%description vmlinux -l de.UTF-8
 vmlinux - dekompressiertes Kernel Bild.
 
-%description vmlinux -l pl
-vmlinux - rozpakowany obraz j±dra.
+%description vmlinux -l pl.UTF-8
+vmlinux - rozpakowany obraz jÄ…dra.
 
 %package net-netfilter
 Summary:	Netfilter kernel modules
-Summary(de):	Netfilter Kernel Treiber
-Summary(pl):	Modu³y Netfiltera
+Summary(de.UTF-8):   Netfilter Kernel Treiber
+Summary(pl.UTF-8):   ModuÅ‚y Netfiltera
 Group:		Base/Kernel
 Requires(postun):	%{name}-up = %{epoch}:%{version}-%{release}
 Requires:	%{name}-up = %{epoch}:%{version}-%{release}
@@ -251,16 +251,16 @@ Autoreqprov:	no
 %description net-netfilter
 Netfilter kernel modules (%{_netfilter_snap}).
 
-%description net-netfilter -l de
+%description net-netfilter -l de.UTF-8
 Netfilter Kernel Treiber (%{_netfilter_snap}).
 
-%description net-netfilter -l pl
-Modu³y Netfiltera (%{_netfilter_snap}).
+%description net-netfilter -l pl.UTF-8
+ModuÅ‚y Netfiltera (%{_netfilter_snap}).
 
 %package pcmcia
 Summary:	PCMCIA modules
-Summary(de):	PCMCIA Module
-Summary(pl):	Modu³y PCMCIA
+Summary(de.UTF-8):   PCMCIA Module
+Summary(pl.UTF-8):   ModuÅ‚y PCMCIA
 Group:		Base/Kernel
 Requires(postun):	%{name}-up = %{epoch}:%{version}-%{release}
 Requires:	%{name}-up = %{epoch}:%{version}-%{release}
@@ -273,16 +273,16 @@ Autoreqprov:	no
 %description pcmcia
 PCMCIA modules (%{pcmcia_version}).
 
-%description pcmcia -l de
+%description pcmcia -l de.UTF-8
 PCMCIA Module (%{pcmcia_version})
 
-%description pcmcia -l pl
-Modu³y PCMCIA (%{pcmcia_version}).
+%description pcmcia -l pl.UTF-8
+ModuÅ‚y PCMCIA (%{pcmcia_version}).
 
 %package headers
 Summary:	header files for the linux kernel
-Summary(de):	header dateien für den linux-kernel
-Summary(pl):	pliki nag³ówkowe j±dra linuksa
+Summary(de.UTF-8):   header dateien fÃ¼r den linux-kernel
+Summary(pl.UTF-8):   pliki nagÅ‚Ã³wkowe jÄ…dra linuksa
 group:		development/building
 provides:	kernel-headers = %{epoch}:%{version}-%{release}
 provides:	kernel-headers(agpgart) = %{version}
@@ -297,19 +297,19 @@ These are the C header files for the Linux kernel, which define
 structures and constants that are needed when rebuilding the kernel or
 building kernel modules.
 
-%description headers -l de
-Dies sind die C Header Dateien für den Linux-Kernel, die definierte
+%description headers -l de.UTF-8
+Dies sind die C Header Dateien fÃ¼r den Linux-Kernel, die definierte
 Strukturen und Konstante beinhalten die beim rekompilieren des Kernels
 oder bei Kernel Modul kompilationen gebraucht werden.
 
-%description headers -l pl
-Pakiet zawiera pliki nag³ówkowe j±dra, niezbêdne do rekompilacji j±dra
-oraz budowania modu³ów j±dra.
+%description headers -l pl.UTF-8
+Pakiet zawiera pliki nagÅ‚Ã³wkowe jÄ…dra, niezbÄ™dne do rekompilacji jÄ…dra
+oraz budowania moduÅ‚Ã³w jÄ…dra.
 
 %package module-build
 Summary:	Development files for building kernel modules
-Summary(de):	Development Dateien die beim Kernel Modul kompilationen gebraucht werden
-Summary(pl):	Pliki s³u¿±ce do budowania modu³ów j±dra
+Summary(de.UTF-8):   Development Dateien die beim Kernel Modul kompilationen gebraucht werden
+Summary(pl.UTF-8):   Pliki sÅ‚uÅ¼Ä…ce do budowania moduÅ‚Ã³w jÄ…dra
 Group:		Development/Building
 Requires:	%{name}-headers = %{epoch}:%{version}-%{release}
 Provides:	kernel-module-build = %{epoch}:%{version}-%{release}
@@ -319,18 +319,18 @@ Autoreqprov:	no
 Development files from kernel source tree needed to build Linux kernel
 modules from external packages.
 
-%description module-build -l de
+%description module-build -l de.UTF-8
 Development Dateien des Linux-Kernels die beim kompilieren externer
 Kernel Module gebraucht werden.
 
-%description module-build -l pl
-Pliki ze drzewa ¼róde³ j±dra potrzebne do budowania modu³ów j±dra
-Linuksa z zewnêtrznych pakietów.
+%description module-build -l pl.UTF-8
+Pliki ze drzewa ÅºrÃ³deÅ‚ jÄ…dra potrzebne do budowania moduÅ‚Ã³w jÄ…dra
+Linuksa z zewnÄ™trznych pakietÃ³w.
 
 %package source
 Summary:	Kernel source tree
-Summary(de):	Der Kernel Quelltext
-Summary(pl):	Kod ¼ród³owy j±dra Linuksa
+Summary(de.UTF-8):   Der Kernel Quelltext
+Summary(pl.UTF-8):   Kod ÅºrÃ³dÅ‚owy jÄ…dra Linuksa
 Group:		Development/Building
 Requires:	%{name}-module-build = %{epoch}:%{version}-%{release}
 Provides:	kernel-source = %{epoch}:%{version}-%{release}
@@ -342,29 +342,29 @@ most C programs as they depend on constants defined in here. You can
 also build a custom kernel that is better tuned to your particular
 hardware.
 
-%description source -l de
-Das Kernel-Source-Packet enthält den source code (C/Assembler-Code) des
+%description source -l de.UTF-8
+Das Kernel-Source-Packet enthÃ¤lt den source code (C/Assembler-Code) des
 Linux-Kernels. Die Source-Dateien werden gebraucht, um viele
-C-Programme zu kompilieren, da sie auf Konstanten zurückgreifen, die
-im Kernel-Source definiert sind. Die Source-Dateien können auch
+C-Programme zu kompilieren, da sie auf Konstanten zurÃ¼ckgreifen, die
+im Kernel-Source definiert sind. Die Source-Dateien kÃ¶nnen auch
 benutzt werden, um einen Kernel zu kompilieren, der besser auf Ihre
 Hardware ausgerichtet ist.
 
-%description source -l fr
+%description source -l fr.UTF-8
 Le package pour le kernel-source contient le code source pour le noyau
-linux. Ces sources sont nécessaires pour compiler la plupart des
-programmes C, car il dépend de constantes définies dans le code
-source. Les sources peuvent être aussi utilisée pour compiler un noyau
-personnalisé pour avoir de meilleures performances sur des matériels
+linux. Ces sources sont nÃ©cessaires pour compiler la plupart des
+programmes C, car il dÃ©pend de constantes dÃ©finies dans le code
+source. Les sources peuvent Ãªtre aussi utilisÃ©e pour compiler un noyau
+personnalisÃ© pour avoir de meilleures performances sur des matÃ©riels
 particuliers.
 
-%description source -l pl
-Pakiet zawiera kod ¼ród³owy j±dra systemu.
+%description source -l pl.UTF-8
+Pakiet zawiera kod ÅºrÃ³dÅ‚owy jÄ…dra systemu.
 
 %package doc
 Summary:	Kernel documentation
-Summary(de):	Kernel Dokumentation
-Summary(pl):	Dokumentacja do j±dra Linuksa
+Summary(de.UTF-8):   Kernel Dokumentation
+Summary(pl.UTF-8):   Dokumentacja do jÄ…dra Linuksa
 Group:		Documentation
 Provides:	kernel-doc = %{version}
 Autoreqprov:	no
@@ -373,12 +373,12 @@ Autoreqprov:	no
 This is the documentation for the Linux kernel, as found in
 Documentation directory.
 
-%description doc -l de
+%description doc -l de.UTF-8
 Dies ist die Kernel Dokumentation wie sie im 'Documentation' Verzeichniss
 vorgefunden werden kann.
 
-%description doc -l pl
-Pakiet zawiera dokumentacjê do j±dra Linuksa pochodz±c± z katalogu
+%description doc -l pl.UTF-8
+Pakiet zawiera dokumentacjÄ™ do jÄ…dra Linuksa pochodzÄ…cÄ… z katalogu
 Documentation.
 
 %prep
